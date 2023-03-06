@@ -17,8 +17,8 @@ function toggleMode() {
       "./assets/avatar-light.png"
     ) /*Aqui , eu estou pedindo para ele pegar o atributo SRC e dar um novo valor pra ele, e eu conto onde esta o novo valor.*/
   } else {
-    img.setAttribute("src", "./assets/avatar.png")
+    img.setAttribute("src", "./assets/Avatar.png")
     /*Reparar que tive definir o padrão de novo. Acredito que seja , porque caso eu não colocasse de novo, ele ia mudar somente uma vez, e depois não ia mudar mais*/
   }
-  
+
 }
