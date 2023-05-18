@@ -14,7 +14,6 @@ body {
 body * {
   font-family: "Inter", sans-serif;
   color: var(--text-color);
-  /*posso colocar o color como #ffffff; significa branco*/
 }
 
 :root {
