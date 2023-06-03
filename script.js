@@ -21,3 +21,4 @@ function toggleMode() {
     /*Reparar que tive definir o padrão de novo. Acredito que seja , porque caso eu não colocasse de novo, ele ia mudar somente uma vez, e depois não ia mudar mais*/
   }
 }
+document.getElementById('formacao')
