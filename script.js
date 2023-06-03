@@ -17,9 +17,13 @@ function toggleMode() {
   }
 }
 
-document.getElementById('formacao').addEventListener("click",function arrumar(link) {
-  link.preventDefault()
-  let conteudo = document.getElementById('conteudo')
-  conteudo.innerHTML='HTML | CSS | JavaScript (Tecnologias no Front-end)<br> Python (Linguagem no Back-end)<br> Git | Github (Ferramenta de versionamento de código)'
-  }
+document.getElementById('formacao').addEventListener("click",function arrumar(t) {
+  
+  console.log(t)
+  t.preventDefault()
+  const conteudo = document.getElementById('conteudo')
+                fetch(t.target.href)
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+}
 )
