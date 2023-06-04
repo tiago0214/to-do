@@ -17,12 +17,12 @@ function toggleMode() {
   }
 }
 
-document.getElementById('formacao').addEventListener("click",function arrumar(t) {
+document.getElementById('formacao').addEventListener("click",function arrumar(link) {
   
-  console.log(t)
-  t.preventDefault()
+  console.log(link)
+  link.preventDefault()
   const conteudo = document.getElementById('conteudo')
-                fetch(t.target.href)
+                fetch(link.target.href)
                     .then(resp => resp.text())
                     .then(html => conteudo.innerHTML = html)
 }
