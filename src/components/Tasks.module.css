@@ -1,0 +1,32 @@
+.tasksContainer{
+  margin-top: 4rem;
+}
+
+.taskHeader{
+  display: flex;
+  justify-content: space-between;
+}
+
+.create, .complete{
+  display: flex;
+  gap: 0.5rem;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.create > div,.complete > div {
+  background-color: var(--gray-400);
+  padding: 2px 8px;
+  border-radius: 999px;
+  color: var(--gray-200);
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.complete{
+  color: var(--purple);
+}
+
+.taskBody{
+  margin-top: 1.5rem;
+}

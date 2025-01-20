@@ -1,0 +1,29 @@
+.emptyContainer{
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*align-items: center; */
+  border-top: solid 1px var(--gray-400);
+  border-radius: 8px;
+}
+
+.emptyContainer > img {
+  align-self: center; /* Centers the image horizontally */
+  flex-grow: 0; /* Prevents the image from stretching */
+  width: auto;
+  height: auto;
+}
+
+.text{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--gray-300);
+  line-height: 1.4;
+}
+
+.text :first-child{
+  font-weight: bold;
+}

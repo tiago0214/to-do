@@ -1,13 +1,15 @@
 import { Header } from './components/Header'
 import styles from './App.module.css'
-import { Task } from './components/Task'
+import { CreateTask } from './components/CreateTask'
+import { Tasks } from './components/Tasks'
 
 export function App() {
   return (
     <main>
       <Header />
       <div className={styles.container}>
-        <Task />
+        <CreateTask />
+        <Tasks />
       </div>
     </main>
   )
