@@ -6,18 +6,22 @@ import { NewTaskType } from './Tasks'
 interface WorkTaskProps {
   task: NewTaskType
   changeTaskStatus: (taskId: string) => void
-  handleDeleteTask: (taskId: string) => void
+  deleteTask: (taskId: string) => void
 }
 
 export function WorkTask({
   task,
   changeTaskStatus,
-  handleDeleteTask,
+  deleteTask,
 }: WorkTaskProps) {
   function handleFinishTask() {
     task.isCompleted = true
 
     changeTaskStatus(task.id)
+  }
+
+  function handleDeleteTask() {
+    deleteTask(task.id)
   }
 
   return (
@@ -37,7 +41,7 @@ export function WorkTask({
         {task.content}
       </p>
 
-      <a onClick={} className={styles.trash}>
+      <a className={styles.trash} onClick={handleDeleteTask}>
         <Trash />
       </a>
     </div>

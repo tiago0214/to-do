@@ -36,7 +36,7 @@ export function Tasks() {
     setTasks([...task])
   }
 
-  function handleDeleteTask(taskId: string) {
+  function deleteTask(taskId: string) {
     const task = tasks.filter((element) => {
       return element.id != taskId
     })
@@ -70,7 +70,7 @@ export function Tasks() {
                   key={element.id}
                   task={element}
                   changeTaskStatus={handleChangeTaskStatus}
-                  handleDeleteTask={handleDeleteTask}
+                  deleteTask={deleteTask}
                 />
               )
             })
