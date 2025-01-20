@@ -1,5 +1,6 @@
 import { EmptyTask } from './EmptyTask'
 import styles from './Tasks.module.css'
+import { WorkTask } from './WorkTask'
 
 export function Tasks() {
   return (
@@ -16,7 +17,11 @@ export function Tasks() {
       </header>
 
       <div className={styles.taskBody}>
-        <EmptyTask />
+        {/* <EmptyTask /> */}
+        <WorkTask isCompleted={false} />
+        <WorkTask isCompleted={false} />
+        <WorkTask isCompleted={true} />
+        <WorkTask isCompleted={true} />
       </div>
     </div>
   )

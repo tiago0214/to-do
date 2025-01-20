@@ -1,0 +1,71 @@
+.workTask{
+  padding: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  background-color: var(--gray-500);
+  border-radius: 8px;
+  border: solid 1px var(--gray-400);
+}
+
+.workTask + .workTask{
+  margin-top: 0.75rem;
+}
+
+.uncheck{
+  color: var(--blue);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.uncheck:hover{
+  color: var(--blue-dark);
+  cursor: pointer;
+}
+
+.check{
+  color: var(--purple-dark);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check:hover{
+  color: var(--purple);
+  cursor: pointer;
+}
+
+.workText{
+  flex: 1;
+  color: var(--gray-100);
+  line-height: 1.4;
+}
+
+.workTextComplete{
+  flex: 1;
+  color: var(--gray-100);
+  text-decoration: line-through;
+  line-height: 1.4;
+  color: var(--gray-300)
+}
+
+.trash{
+  color: var(--gray-300);
+  /* line-height: 0; */
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.trash:hover{
+  color: var(--danger);
+  background-color: var(--gray-400);
+}
