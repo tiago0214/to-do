@@ -44,6 +44,11 @@ export function Tasks() {
     setTasks(task)
   }
 
+  const completedTasks = tasks.reduce((acc, current) => {
+    if (current.isCompleted === true) acc++
+    return acc
+  }, 0)
+
   return (
     <>
       <CreateTask handleCreateNewTask={handleCreateNewTask} />
@@ -52,11 +57,15 @@ export function Tasks() {
         <header className={styles.taskHeader}>
           <div className={styles.create}>
             <span>Tarefas criadas</span>
-            <div>0</div>
+            <div>{tasks.length}</div>
           </div>
           <div className={styles.complete}>
             <span>Concluidas</span>
-            <div>0</div>
+            {tasks.length === 0 ? (
+              <div>0</div>
+            ) : (
+              <div>{`${completedTasks} de ${tasks.length}`}</div>
+            )}
           </div>
         </header>
 
