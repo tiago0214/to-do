@@ -1,6 +1,5 @@
 import { Header } from './components/Header'
 import styles from './App.module.css'
-import { CreateTask } from './components/CreateTask'
 import { Tasks } from './components/Tasks'
 
 export function App() {
@@ -8,7 +7,6 @@ export function App() {
     <main>
       <Header />
       <div className={styles.container}>
-        <CreateTask />
         <Tasks />
       </div>
     </main>
